@@ -1,0 +1,128 @@
+Language model created by QuickLM on Sun May 14 22:29:08 EDT 2017
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 18 sentences and 25 words
+
+\data\
+ngram 1=25
+ngram 2=41
+ngram 3=25
+
+\1-grams:
+-0.8311 </s> -0.3010
+-0.8311 <s> -0.2275
+-2.0864 ARRIVE -0.2975
+-2.0864 AT -0.2975
+-2.0864 BISCUIT -0.2317
+-2.0864 BULL -0.2317
+-2.0864 CHIPS -0.2317
+-2.0864 COFFEE -0.2317
+-2.0864 COLA -0.2317
+-2.0864 CONTINUE -0.2317
+-2.0864 FOLLOW -0.2317
+-2.0864 MILK -0.2317
+-2.0864 NAVIGATION -0.2317
+-2.0864 NO -0.2317
+-2.0864 NOODLES -0.2317
+-2.0864 PAPER -0.2317
+-2.0864 PIE -0.2317
+-2.0864 RED -0.2975
+-2.0864 RIGHT -0.2317
+-2.0864 ROLL -0.2975
+-2.0864 SHAMPOO -0.2317
+-2.0864 SOAP -0.2317
+-1.7853 START -0.2939
+-2.0864 TEA -0.2317
+-1.7853 TERMINAL -0.2317
+-2.0864 THE -0.2939
+-2.0864 TOOTHPASTE -0.2317
+-2.0864 WATER -0.2317
+-2.0864 YES -0.2317
+
+\2-grams:
+-1.5563 <s> ARRIVE 0.0000
+-1.5563 <s> BISCUIT 0.0000
+-1.5563 <s> CHIPS 0.0000
+-1.5563 <s> COFFEE 0.0000
+-1.5563 <s> COLA 0.0000
+-1.5563 <s> CONTINUE 0.0000
+-1.5563 <s> MILK 0.0000
+-1.5563 <s> NO 0.0000
+-1.5563 <s> NOODLES 0.0000
+-1.5563 <s> PAPER 0.0000
+-1.5563 <s> PIE 0.0000
+-1.5563 <s> RED 0.0000
+-1.5563 <s> RIGHT 0.0000
+-1.5563 <s> ROLL 0.0000
+-1.5563 <s> SHAMPOO 0.0000
+-1.5563 <s> SOAP 0.0000
+-1.2553 <s> START 0.0000
+-1.5563 <s> TEA 0.0000
+-1.5563 <s> TERMINAL 0.0000
+-1.5563 <s> TOOTHPASTE 0.0000
+-1.5563 <s> WATER 0.0000
+-1.5563 <s> YES 0.0000
+-0.3010 ARRIVE AT 0.0000
+-0.3010 AT THE 0.0000
+-0.3010 BISCUIT </s> -0.3010
+-0.3010 BULL </s> -0.3010
+-0.3010 CHIPS </s> -0.3010
+-0.3010 COFFEE </s> -0.3010
+-0.3010 COLA </s> -0.3010
+-0.3010 CONTINUE </s> -0.3010
+-0.3010 FOLLOW </s> -0.3010
+-0.3010 MILK </s> -0.3010
+-0.3010 MILK TEA 0.0000
+-0.3010 NAVIGATION </s> -0.3010
+-0.3010 NO </s> -0.3010
+-0.3010 NOODLES </s> -0.3010
+-0.3010 PAPER </s> -0.3010
+-0.3010 PIE </s> -0.3010
+-0.3010 RED BULL 0.0000
+-0.3010 RIGHT </s> -0.3010
+-0.3010 ROLL PAPER 0.0000
+-0.3010 SPRITE </s> -0.3010
+-0.6021 START FOLLOW 0.0000
+-0.6021 START NAVIGATION 0.0000
+-0.3010 TERMINAL </s> -0.3010
+-0.3010 THE TERMINAL 0.0000
+-0.3010 TOOTHPASTE </s> -0.3010
+-0.3010 WATER </s> -0.3010
+-0.3010 YES </s> -0.3010
+
+\3-grams:
+-0.3010 <s> ARRIVE AT
+-0.3010 <s> BISCUIT </s>
+-0.3010 <s> CHIPS </s>
+-0.3010 <s> COFFEE </s>
+-0.3010 <s> CONTINUE </s>
+-0.3010 <s> MILK TEA
+-0.3010 <s> NO </s>
+-0.3010 <s> NOODLES </s>
+-0.3010 <s> PAPER </s>
+-0.3010 <s> PIE </s>
+-0.3010 <s> RED BULL
+-0.3010 <s> RIGHT </s>
+-0.3010 <s> SHAMPOO </s>
+-0.3010 <s> SOAP </s>
+-0.6021 <s> START FOLLOW
+-0.6021 <s> START NAVIGATION
+-0.3010 <s> TEA </s>
+-0.3010 <s> TERMINAL </s>
+-0.3010 <s> TOOTHPASTE </s>
+-0.3010 <s> WATER </s>
+-0.3010 <s> YES </s>
+-0.3010 ARRIVE AT THE
+-0.3010 AT THE TERMINAL
+-0.3010 RED BULL </s>
+-0.3010 START FOLLOW </s>
+-0.3010 START NAVIGATION </s>
+-0.3010 THE TERMINAL </s>
+
+\end\

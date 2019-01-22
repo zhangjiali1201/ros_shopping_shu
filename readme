@@ -1,0 +1,72 @@
+shopping仿真
+1.启动仿真环境
+cd /home/ros/robocup
+source devel/setup.bash
+roslaunch bringup simulate-amada.launch
+
+2.模拟follow过程
+cd /home/ros/robocup
+source devel/setup.bash
+roslaunch utility keyboard_teleop.launch (键盘)
+
+cd ~/catkin_ws
+source devel/setup.bash
+roslaunch rbx1_apps follower.launch (kinect深度)
+
+roslaunch freenect_launch freenect.launch  //启动kinect
+rosrun image_view disparity_view image:=/camera/depth/disparity   //启动深度图像
+cd ~/catkin_ws
+source devel/setup.bash
+roslaunch rbx2_ar_tags ar_large_markers_kinect.launch  //识别ar大标签
+cd ~/catkin_ws
+source devel/setup.bash
+roslaunch rbx2_ar_tags ar_follower.launch (ar follow)
+
+3.启动shopping主框架
+cd /home/ros/robocup
+source devel/setup.bash
+roslaunch shopping_2018 shopping2.launch
+
+4.启动语音识别
+cd /home/ros/robocup
+source devel/setup.bash
+roslaunch shopping_2018 recognizer.launch
+
+
+
+Shopping on Real Robot
+1.启动底盘
+$ sudo su
+$ cd /home/ros/catkin_ws
+$ source devel/setup.bash
+$ roslaunch base_controller su_bringuphardware.launch
+
+2.建图
+$ cd /home/ros/robocup
+$ source devel/setup.bash
+$ roslaunch bringup nav_with_gmap.launch
+
+3.follow
+$ cd /home/ros/robocup
+$ source devel/setup.bash
+$ roslaunch turtlebot_follower follower.launch    //点云follow
+
+$ roslaunch freenect_launch freenect.launch   //kinect启动
+$ rosrun image_view disparity_view image:=/camera/depth/disparity
+$ cd ~/catkin_ws
+$ source devel/setup.bash
+$ roslaunch rbx2_ar_tags ar_large_markers_kinect.launch   //识别大标签
+$ cd ~/catkin_ws
+$ source devel/setup.bash
+$ roslaunch rbx2_ar_tags ar_follower.launch   //ar标签follow
+
+4.主框架
+$ cd /home/ros/robocup
+$ source devel/setup.bash
+$ roslaunch shopping_2018 shopping2.launch
+
+5.语音识别
+$ cd /home/ros/robocup
+$ source devel/setup.bash
+$ roslaunch shopping_2018 recognizer.launch
+

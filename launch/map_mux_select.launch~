@@ -1,0 +1,5 @@
+<launch>
+ <node pkg="topic_tools" type="mux" name="map_select_mux" args="map dynamic_map static_map" output="screen" />
+ <!--node pkg="topic_tools" type="mux" name="cmd_vel_select_mux" args="cmd_vel follow_cmd_vel nav_cmd_vel" /-->
+ <!--node pkg="2017kunshan" type="map_mux_select.py" name="map_mux_select" output="screen" /-->
+</launch>

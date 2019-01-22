@@ -1,0 +1,14 @@
+<launch>
+		<!--shopping 主框架节点-->
+ <node pkg="shopping_2018" type="shopping" name="shopping_node" output="screen"/>	
+
+	<!--文本转语音节点-->
+ <node pkg="sound_play" type="soundplay_node.py" name="soundplay_node" output="screen"/>
+
+	<!--选择多速度输入的节点-->
+ <node pkg="topic_tools" type="mux" name="cmd_vel_select_mux" args="cmd_vel stop_cmd_vel follow_cmd_vel nav_cmd_vel" output="screen"/>
+
+	<!--语音分析节点-->
+ <node pkg="shopping_2018" type="voice_analysis" name="voice_analysis_node" output="screen" />
+
+</launch>

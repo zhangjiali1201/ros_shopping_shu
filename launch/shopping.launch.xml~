@@ -1,0 +1,17 @@
+<launch>
+	<!--shopping 主框架节点-->
+ <node pkg="2017kunshan" type="shopping" name="shopping_node" output="screen"/>		
+	<!--保存follow结束时的地图节点-->
+ <node pkg="2017kunshan" type="map_saver_shopping" name="map_saver_node" output="screen"/>
+	<!--文本转语音节点-->
+ <node pkg="sound_play" type="soundplay_node.py" name="soundplay_node" output="screen"/>
+	<!--选择多地图输入的节点-->
+ <node pkg="topic_tools" type="mux" name="map_select_mux" args="map dynamic_map static_map" output="screen" />
+	<!--选择多速度输入的节点-->
+ <node pkg="topic_tools" type="mux" name="cmd_vel_select_mux" args="cmd_vel follow_cmd_vel nav_cmd_vel" output="screen"/>
+	<!--切换地图输入的节点-->
+ <node pkg="2017kunshan" type="map_mux_select.py" name="map_mux_select" output="screen" />
+	<!--提供static map节点，该地图将用于导航-->
+ <node pkg="map_server_for_shopping" type="map_server" name="map_server" args="/home/ros/robocup/map/defaultmap.yaml" output="screen"/>
+
+</launch>

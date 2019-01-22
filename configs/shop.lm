@@ -1,0 +1,101 @@
+Language model created by QuickLM on Fri May 11 12:33:56 EDT 2018
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 19 sentences and 21 words
+
+\data\
+ngram 1=21
+ngram 2=38
+ngram 3=19
+
+\1-grams:
+-0.7782 </s> -0.3010
+-0.7782 <s> -0.2218
+-2.0569 CHIPS -0.2218
+-2.0569 COFFEE -0.2218
+-2.0569 COLA -0.2218
+-2.0569 CONTINUE -0.2218
+-2.0569 FLORALWATER -0.2218
+-2.0569 FOLLOW -0.2218
+-2.0569 ICETEA -0.2218
+-2.0569 LAOGANMA -0.2218
+-2.0569 MILK -0.2218
+-2.0569 NAPKIN -0.2218
+-2.0569 NAVIGATION -0.2218
+-2.0569 NO -0.2218
+-2.0569 NOODLE -0.2218
+-2.0569 PORRIDGE -0.2218
+-2.0569 SAFEGUARD -0.2218
+-2.0569 TERMINAL -0.2218
+-2.0569 TOOTHPASTE -0.2218
+-2.0569 WATER -0.2218
+-2.0569 YES -0.2218
+
+\2-grams:
+-1.5798 <s> CHIPS 0.0000
+-1.5798 <s> COFFEE 0.0000
+-1.5798 <s> COLA 0.0000
+-1.5798 <s> CONTINUE 0.0000
+-1.5798 <s> FLORALWATER 0.0000
+-1.5798 <s> FOLLOW 0.0000
+-1.5798 <s> ICETEA 0.0000
+-1.5798 <s> LAOGANMA 0.0000
+-1.5798 <s> MILK 0.0000
+-1.5798 <s> NAPKIN 0.0000
+-1.5798 <s> NAVIGATION 0.0000
+-1.5798 <s> NO 0.0000
+-1.5798 <s> NOODLE 0.0000
+-1.5798 <s> PORRIDGE 0.0000
+-1.5798 <s> SAFEGUARD 0.0000
+-1.5798 <s> TERMINAL 0.0000
+-1.5798 <s> TOOTHPASTE 0.0000
+-1.5798 <s> WATER 0.0000
+-1.5798 <s> YES 0.0000
+-0.3010 CHIPS </s> -0.3010
+-0.3010 COFFEE </s> -0.3010
+-0.3010 COLA </s> -0.3010
+-0.3010 CONTINUE </s> -0.3010
+-0.3010 FLORALWATER </s> -0.3010
+-0.3010 FOLLOW </s> -0.3010
+-0.3010 ICETEA </s> -0.3010
+-0.3010 LAOGANMA </s> -0.3010
+-0.3010 MILK </s> -0.3010
+-0.3010 NAPKIN </s> -0.3010
+-0.3010 NAVIGATION </s> -0.3010
+-0.3010 NO </s> -0.3010
+-0.3010 NOODLE </s> -0.3010
+-0.3010 PORRIDGE </s> -0.3010
+-0.3010 SAFEGUARD </s> -0.3010
+-0.3010 TERMINAL </s> -0.3010
+-0.3010 TOOTHPASTE </s> -0.3010
+-0.3010 WATER </s> -0.3010
+-0.3010 YES </s> -0.3010
+
+\3-grams:
+-0.3010 <s> CHIPS </s>
+-0.3010 <s> COFFEE </s>
+-0.3010 <s> COLA </s>
+-0.3010 <s> CONTINUE </s>
+-0.3010 <s> FLORALWATER </s>
+-0.3010 <s> FOLLOW </s>
+-0.3010 <s> ICETEA </s>
+-0.3010 <s> LAOGANMA </s>
+-0.3010 <s> MILK </s>
+-0.3010 <s> NAPKIN </s>
+-0.3010 <s> NAVIGATION </s>
+-0.3010 <s> NO </s>
+-0.3010 <s> NOODLE </s>
+-0.3010 <s> PORRIDGE </s>
+-0.3010 <s> SAFEGUARD </s>
+-0.3010 <s> TERMINAL </s>
+-0.3010 <s> TOOTHPASTE </s>
+-0.3010 <s> WATER </s>
+-0.3010 <s> YES </s>
+
+\end\

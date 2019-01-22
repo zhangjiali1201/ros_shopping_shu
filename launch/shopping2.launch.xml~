@@ -1,0 +1,10 @@
+<launch>
+		<!--shopping 主框架节点-->
+ <node pkg="2017kunshan" type="shopping" name="shopping_node" output="screen"/>	
+
+	<!--文本转语音节点-->
+ <node pkg="sound_play" type="soundplay_node.py" name="soundplay_node" output="screen"/>
+
+
+
+</launch>

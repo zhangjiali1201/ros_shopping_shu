@@ -1,0 +1,6 @@
+<launch>
+  <node name="recognizer" pkg="pocketsphinx" type="recognizer.py">
+    <param name="lm" value="$(find 2017kunshan)/configs/shop.lm"/>
+    <param name="dict" value="$(find 2017kunshan)/configs/shop.dic"/>
+  </node>
+</launch>

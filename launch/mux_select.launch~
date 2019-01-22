@@ -1,0 +1,10 @@
+<launch>
+	<!--shopping 主要节点-->
+ <node pkg="2017kunshan" type="shopping" name="shopping_node" />		
+	<!--保存follow结束时的地图节点-->
+ <node pkg="2017kunshan" type="map_saver_shopping" name="map_saver_node" />
+ <node pkg="sound_play" type="soundplay_node.py" name="soundplay_node" />
+ <node pkg="topic_tools" type="mux" name="map_select_mux" args="map dynamic_map static_map" output="screen" />
+ <node pkg="topic_tools" type="mux" name="cmd_vel_select_mux" args="cmd_vel follow_cmd_vel nav_cmd_vel" output="screen"/>
+ <node pkg="2017kunshan" type="map_mux_select.py" name="map_mux_select" output="screen" />
+</launch>
